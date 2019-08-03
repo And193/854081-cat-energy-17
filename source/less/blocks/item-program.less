@@ -1,0 +1,104 @@
+.item-program{
+  padding: 21px;
+  margin-bottom: 20px;
+  background-color: @light-grey;
+
+  &__title{
+    position: relative;
+    margin: 0;
+    padding-left: 72px;
+    padding-top: 30px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    font-size: 24px;
+    line-height: 1.54em;
+    color: @dark-grey;
+    font-weight: normal;
+    text-transform: uppercase;
+  }
+
+  &__title::before{
+    content: "";
+    position: absolute;
+    top: 22px;
+    left: 1px;
+    width: 50px;
+    height: 50px;
+    background-color: @color-green;
+    border-radius: 50%;
+  }
+
+  &__desc{
+    padding: 0;
+    padding-bottom: 20px;
+    margin: 0;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #d9d9d9;
+    .paragraph;
+  }
+
+  &__to-catalog{
+    position: relative;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: @dark-grey;
+
+    &:visited{
+      color: @dark-grey-translucent;
+    }
+
+    &::after{
+      content: "";
+      position: absolute;
+      right: -36px;
+      top: 0.5em;
+      width: 24px;
+      height: 1em;
+      background-image: url(../img/icon-right-arrow-long.svg);
+      background-repeat: no-repeat;
+      transition: all ease 0.2s;
+    }
+    &:hover::after{
+      right: -45px;
+      width: 33px;
+      background-image: url(../img/icon-right-arrow-verylong.svg);
+    }
+  }
+}
+
+.item-program--lose-weight{
+  position: relative;
+
+  .item-program__title{
+    &::after{
+      content: "";
+      position: absolute;
+      top: 19px;
+      left: 8px;
+      z-index: 2;
+      width: 70px;
+      height: 50px;
+      background-image: url(../img/icon-cat-slim.svg);
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+.item-program--gain-weight{
+  position: relative;
+
+  .item-program__title{
+    &::after{
+      content: "";
+      position: absolute;
+      top: 32px;
+      left: -8px;
+      z-index: 2;
+      width: 70px;
+      height: 50px;
+      background-image: url(../img/icon-cat-pro.svg);
+      background-repeat: no-repeat;
+    }
+  }
+}
