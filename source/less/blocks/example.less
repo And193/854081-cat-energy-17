@@ -1,0 +1,41 @@
+.example {
+  background-color: @light-grey;
+
+  &__wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+  }
+
+  &__title {
+    .title-h2;
+  }
+
+  &__desc {
+    margin: 0;
+    padding: 0 0 27px;
+    .paragraph;
+  }
+
+  &__values {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 100%;
+    margin-bottom: 35px;
+  }
+
+  &__cost {
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.43em;
+    color: @dark-grey;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+}
