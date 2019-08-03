@@ -1,0 +1,52 @@
+.socials {
+  &__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  &__item {
+    margin-right: 35px;
+  }
+
+  &__item:last-child {
+    margin-right: 0;
+  }
+
+  &__link {
+    display: block;
+    width: 22px;
+    height: 20px;
+  }
+
+  &__link {
+    max-width: 100%;
+    min-height: 100%;
+  }
+
+  &__link:hover {
+    fill: @color-green;
+  }
+
+  &__link:active {
+    opacity: 0.5;
+  }
+
+  &__link--vk svg{
+    width: 22px;
+    height: 12px;
+  }
+
+  &__link--insta svg{
+    width: 16px;
+    height: 16px;
+  }
+
+  &__link--facebook svg{
+    width: 10px;
+    height: 19px;
+  }
+}
