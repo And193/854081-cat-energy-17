@@ -1,5 +1,5 @@
 .socials {
-  &__list {
+  .socials__list {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8,28 +8,28 @@
     list-style: none;
   }
 
-  &__item {
+  .socials__item {
     margin-right: 35px;
   }
 
-  &__item:last-child {
+  .socials__item:last-child {
     margin-right: 0;
   }
 
-  &__link {
+  .socials__link {
     display: block;
     width: 22px;
     height: 20px;
     max-width: 100%;
     min-height: 100%;
-  }
 
-  &__link:hover {
-    fill: @color-green;
-  }
+    &:hover {
+      fill: @color-green;
+    }
 
-  &__link:active {
-    opacity: 0.5;
+    &:active {
+      opacity: 0.5;
+    }
   }
 
   &__link--vk svg {

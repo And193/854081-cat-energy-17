@@ -2,25 +2,28 @@
   display: flex;
   flex-wrap: wrap;
 
-  &__wrap {
+  .product__wrap {
     display: flex;
     flex-grow: 1;
     margin-bottom: 20px;
   }
 
-  &__title-link {
+  .product__title-link {
     color: @dark-grey;
     text-decoration: none;
     text-transform: uppercase;
   }
 
-  &__title {
+  .product__title {
     margin: 20px 0;
     padding: 0;
     width: 100%;
+    font-size: 16px;
+    line-height: 1.25em;
+    font-weight: normal;
   }
 
-  &__info-wrap {
+  .product__info-wrap {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
@@ -65,11 +68,13 @@
     line-height: 1.25em;
     text-transform: uppercase;
     text-align: center;
+    font-weight: normal;
   }
 
   .product__text {
     padding: 0;
     margin: 0 0 20px;
+    font-family: @font-arial;
     font-size: 12px;
     line-height: 1.33em;
     color: #444444;
